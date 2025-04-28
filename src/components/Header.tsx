@@ -30,10 +30,10 @@ const Header = () => {
           </div>
           <div className="flex items-center text-sm">
             <MapPin size={18} className="text-agriPrimary mr-2" />
-            <span>Moscow, Russia</span>
+            <span>Москва, Россия</span>
           </div>
           <Button className="bg-agriPrimary hover:bg-agriDark text-white">
-            Order Now
+            Заказать сейчас
           </Button>
         </div>
       </div>

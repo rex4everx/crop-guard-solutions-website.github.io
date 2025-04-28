@@ -8,7 +8,6 @@ const FloatingCTA = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show button after scrolling down 500px
       if (window.scrollY > 500) {
         setIsVisible(true);
       } else {
@@ -37,7 +36,7 @@ const FloatingCTA = () => {
         onClick={scrollToOrder}
         className="bg-agriPrimary hover:bg-agriDark text-white shadow-lg flex items-center gap-2 px-6 py-6 rounded-full animate-float"
       >
-        Order Now <ArrowRight size={18} />
+        Заказать сейчас <ArrowRight size={18} />
       </Button>
     </div>
   );

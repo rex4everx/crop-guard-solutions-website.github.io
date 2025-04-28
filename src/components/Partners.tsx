@@ -10,29 +10,29 @@ import {
 
 const partners = [
   {
-    name: "AgriFutures Institute",
+    name: "Институт АгроБудущего",
     logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop",
-    description: "Research partner focused on sustainability"
+    description: "Исследовательский партнер, ориентированный на устойчивое развитие"
   },
   {
-    name: "EcoFarm Solutions",
+    name: "ЭкоФерма Решения",
     logo: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=2070&auto=format&fit=crop",
-    description: "Distribution partner for organic farms"
+    description: "Партнер по дистрибуции для органических ферм"
   },
   {
-    name: "Global Harvest Tech",
+    name: "Глобал Харвест Тех",
     logo: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=2141&auto=format&fit=crop",
-    description: "Technology integration for smart farming"
+    description: "Технологическая интеграция для умного земледелия"
   },
   {
-    name: "AgriScience Labs",
+    name: "АгроНаука Лабс",
     logo: "https://images.unsplash.com/photo-1607000975520-8c2436f1a219?q=80&w=2070&auto=format&fit=crop",
-    description: "Quality testing and certification"
+    description: "Контроль качества и сертификация"
   },
   {
-    name: "FarmTech Associates",
+    name: "ФармТех Ассоциация",
     logo: "https://images.unsplash.com/photo-1625757840668-2b2ec825315a?q=80&w=2070&auto=format&fit=crop",
-    description: "Implementation support for large farms"
+    description: "Поддержка внедрения для крупных хозяйств"
   },
 ];
 
@@ -41,9 +41,9 @@ const Partners = () => {
     <section className="section-padding bg-white" id="partners">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-agriDark mb-4">Our Trusted Partners</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-agriDark mb-4">Наши надежные партнеры</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We collaborate with leading agricultural institutions and companies to ensure our product meets the highest standards of quality and effectiveness.
+            Мы сотрудничаем с ведущими сельскохозяйственными учреждениями и компаниями, чтобы гарантировать соответствие нашего продукта высочайшим стандартам качества и эффективности.
           </p>
         </div>
         
@@ -77,8 +77,8 @@ const Partners = () => {
         
         <div className="mt-12 text-center">
           <p className="text-gray-500 italic">
-            "CropGuard has revolutionized our approach to crop protection. The results speak for themselves." 
-            <span className="block mt-2 font-semibold">- Dr. Anna Petrova, AgriFutures Institute</span>
+            "CropGuard революционизировал наш подход к защите растений. Результаты говорят сами за себя." 
+            <span className="block mt-2 font-semibold">- Д-р Анна Петрова, Институт АгроБудущего</span>
           </p>
         </div>
       </div>

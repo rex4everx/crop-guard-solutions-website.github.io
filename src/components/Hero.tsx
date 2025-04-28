@@ -14,17 +14,17 @@ const Hero = () => {
       </div>
       <div className="container mx-auto absolute inset-0 z-20 flex flex-col justify-center items-start text-white">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 max-w-2xl">
-          Increase Crop Yields by 30% with Our Innovative Solution
+          Увеличьте урожайность на 30% с нашим инновационным решением
         </h1>
         <p className="text-xl md:text-2xl mb-6 max-w-lg">
-          Safe, Effective, and Environmentally Friendly Agricultural Chemistry
+          Безопасная, эффективная и экологически чистая агрохимия
         </p>
         <div className="flex space-x-4">
           <Button size="lg" className="bg-agriPrimary hover:bg-agriDark text-white flex items-center gap-2">
-            Order Now <ArrowRight size={16} />
+            Заказать сейчас <ArrowRight size={16} />
           </Button>
           <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white/20">
-            Get a Free Consultation
+            Получить бесплатную консультацию
           </Button>
         </div>
       </div>

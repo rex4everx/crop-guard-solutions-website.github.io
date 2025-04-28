@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -51,9 +50,9 @@ const OrderForm = () => {
     <section className="section-padding bg-white" id="order">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-agriDark mb-4">Order CropGuard Ultra</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-agriDark mb-4">Заказать CropGuard Ultra</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Fill out the form below to place your order. Our team will contact you to confirm details and arrange delivery.
+            Заполните форму ниже, чтобы разместить заказ. Наша команда свяжется с вами для подтверждения деталей и организации доставки.
           </p>
         </div>
         
@@ -62,19 +61,19 @@ const OrderForm = () => {
             <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6">
               <div className="space-y-4">
                 <div>
-                  <Label htmlFor="name">Full Name*</Label>
+                  <Label htmlFor="name">ФИО*</Label>
                   <Input 
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Enter your full name"
+                    placeholder="Введите ваше полное имя"
                     required
                   />
                 </div>
                 
                 <div>
-                  <Label htmlFor="phone">Phone Number*</Label>
+                  <Label htmlFor="phone">Номер телефона*</Label>
                   <Input 
                     id="phone"
                     name="phone"
@@ -86,31 +85,31 @@ const OrderForm = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="email">Email Address</Label>
+                  <Label htmlFor="email">Электронная почта</Label>
                   <Input 
                     id="email"
                     name="email"
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="your@email.com"
+                    placeholder="ваша@почта.com"
                   />
                 </div>
                 
                 <div>
-                  <Label htmlFor="address">Delivery Address*</Label>
+                  <Label htmlFor="address">Адрес доставки*</Label>
                   <Textarea 
                     id="address"
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
-                    placeholder="Enter your complete delivery address"
+                    placeholder="Введите полный адрес доставки"
                     required
                   />
                 </div>
                 
                 <div>
-                  <Label htmlFor="quantity">Quantity</Label>
+                  <Label htmlFor="quantity">Количество</Label>
                   <div className="flex items-center">
                     <button 
                       type="button"
@@ -135,23 +134,23 @@ const OrderForm = () => {
                     >
                       +
                     </button>
-                    <span className="ml-3">5-liter containers</span>
+                    <span className="ml-3">5-литровые контейнеры</span>
                   </div>
                 </div>
                 
                 <div>
-                  <Label htmlFor="comments">Additional Comments</Label>
+                  <Label htmlFor="comments">Дополнительные комментарии</Label>
                   <Textarea 
                     id="comments"
                     name="comments"
                     value={formData.comments}
                     onChange={handleChange}
-                    placeholder="Any special requests or questions"
+                    placeholder="Особые пожелания или вопросы"
                   />
                 </div>
                 
                 <Button type="submit" className="w-full bg-agriPrimary hover:bg-agriDark">
-                  Submit Order
+                  Отправить заказ
                 </Button>
               </div>
             </form>
@@ -159,28 +158,28 @@ const OrderForm = () => {
           
           <div>
             <div className="bg-agriBg rounded-lg shadow-md p-6 mb-6">
-              <h3 className="text-xl font-semibold text-agriDark mb-4">Order Details</h3>
+              <h3 className="text-xl font-semibold text-agriDark mb-4">Детали заказа</h3>
               <div className="flex justify-between items-center py-3 border-b">
                 <span>CropGuard Ultra (5L)</span>
-                <span>₽4,500 per unit</span>
+                <span>₽4,500 за единицу</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b">
-                <span>Quantity</span>
-                <span>{quantity} units</span>
+                <span>Количество</span>
+                <span>{quantity} единиц</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b font-semibold">
-                <span>Subtotal</span>
+                <span>Итого</span>
                 <span>₽{(4500 * quantity).toLocaleString()}</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b">
-                <span>Shipping</span>
-                <span>Calculated at checkout</span>
+                <span>Доставка</span>
+                <span>Рассчитывается при оформлении</span>
               </div>
               <div className="flex justify-between items-center py-3 font-bold text-lg">
-                <span>Total</span>
+                <span>Всего</span>
                 <span>₽{(4500 * quantity).toLocaleString()}*</span>
               </div>
-              <p className="text-sm text-gray-500 mt-2">*Plus shipping costs</p>
+              <p className="text-sm text-gray-500 mt-2">*Плюс стоимость доставки</p>
             </div>
             
             <div className="space-y-4">
@@ -189,8 +188,8 @@ const OrderForm = () => {
                   <Package size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Bulk Ordering Options</h4>
-                  <p className="text-sm text-gray-600">For orders over 10 units, contact us directly for special pricing.</p>
+                  <h4 className="font-semibold">Варианты оптового заказа</h4>
+                  <p className="text-sm text-gray-600">Для заказов более 10 единиц свяжитесь с нами напрямую для получения специальных цен.</p>
                 </div>
               </div>
               
@@ -199,8 +198,8 @@ const OrderForm = () => {
                   <Truck size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Delivery Information</h4>
-                  <p className="text-sm text-gray-600">Standard delivery takes 3-5 business days. Express shipping available for an additional fee.</p>
+                  <h4 className="font-semibold">Информация о доставке</h4>
+                  <p className="text-sm text-gray-600">Стандартная доставка занимает 3-5 рабочих дней. Экспресс-доставка доступна за дополнительную плату.</p>
                 </div>
               </div>
               
@@ -209,8 +208,8 @@ const OrderForm = () => {
                   <Check size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Secure Payment</h4>
-                  <p className="text-sm text-gray-600">We accept bank transfers, credit cards, and online payment systems.</p>
+                  <h4 className="font-semibold">Безопасная оплата</h4>
+                  <p className="text-sm text-gray-600">Мы принимаем банковские переводы, кредитные карты и онлайн-платежные системы.</p>
                 </div>
               </div>
             </div>

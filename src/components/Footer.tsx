@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from 'lucide-react';
@@ -16,7 +15,7 @@ const Footer = () => {
               <span className="text-xl font-montserrat font-bold">CropGuard</span>
             </div>
             <p className="text-sm opacity-70 mb-4">
-              Leading provider of innovative crop protection solutions for modern agriculture.
+              Ведущий поставщик инновационных решений для защиты растений в современном сельском хозяйстве.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-agriPrimary transition-colors">
@@ -32,50 +31,50 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Быстрые ссылки</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Home</Link>
+                <Link to="/" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Главная</Link>
               </li>
               <li>
-                <a href="#product" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Products</a>
+                <a href="#product" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Продукты</a>
               </li>
               <li>
-                <a href="#guidelines" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Application Guidelines</a>
+                <a href="#guidelines" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Инструкция по применению</a>
               </li>
               <li>
-                <a href="#order" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Order Now</a>
+                <a href="#order" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Заказать</a>
               </li>
               <li>
-                <a href="#faq" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">FAQ</a>
+                <a href="#faq" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Вопросы и ответы</a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <h3 className="text-lg font-semibold mb-4">Правовая информация</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/privacy-policy" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Privacy Policy</Link>
+                <Link to="/privacy-policy" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Политика конфиденциальности</Link>
               </li>
               <li>
-                <Link to="/terms-of-service" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Terms of Service</Link>
+                <Link to="/terms-of-service" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Условия использования</Link>
               </li>
               <li>
-                <Link to="/safety-information" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Safety Information</Link>
+                <Link to="/safety-information" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Информация о безопасности</Link>
               </li>
               <li>
-                <Link to="/certificates" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Certificates & Compliance</Link>
+                <Link to="/certificates" className="opacity-70 hover:opacity-100 hover:text-agriPrimary transition-colors">Сертификаты и соответствия</Link>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4">Свяжитесь с нами</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span className="opacity-70">123 Agricultural Drive, Moscow, Russia</span>
+                <span className="opacity-70">ул. Сельскохозяйственная 123, Москва, Россия</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 flex-shrink-0" />
@@ -90,11 +89,11 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm opacity-70">© {new Date().getFullYear()} CropGuard. All rights reserved.</p>
+          <p className="text-sm opacity-70">© {new Date().getFullYear()} CropGuard. Все права защищены.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" className="text-sm opacity-70 hover:opacity-100 transition-colors">Sitemap</a>
-            <a href="#" className="text-sm opacity-70 hover:opacity-100 transition-colors">Distributors</a>
-            <a href="#" className="text-sm opacity-70 hover:opacity-100 transition-colors">Support</a>
+            <a href="#" className="text-sm opacity-70 hover:opacity-100 transition-colors">Карта сайта</a>
+            <a href="#" className="text-sm opacity-70 hover:opacity-100 transition-colors">Дистрибьюторы</a>
+            <a href="#" className="text-sm opacity-70 hover:opacity-100 transition-colors">Поддержка</a>
           </div>
         </div>
       </div>

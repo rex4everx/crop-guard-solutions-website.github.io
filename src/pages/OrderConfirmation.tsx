@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 
 const OrderConfirmation = () => {
   const location = useLocation();
-  const { name, quantity } = location.state || { name: 'Customer', quantity: 1 };
+  const { name, quantity } = location.state || { name: 'Клиент', quantity: 1 };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -21,48 +21,48 @@ const OrderConfirmation = () => {
               <div className="h-20 w-20 bg-agriPrimary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Check className="text-white" size={48} />
               </div>
-              <h1 className="text-3xl font-bold text-agriDark mb-2">Order Received!</h1>
-              <p className="text-gray-600">Thank you, {name}. Your order has been successfully submitted.</p>
+              <h1 className="text-3xl font-bold text-agriDark mb-2">Заказ получен!</h1>
+              <p className="text-gray-600">Спасибо, {name}. Ваш заказ успешно отправлен.</p>
             </div>
             
             <div className="border-t border-b py-4 mb-6">
-              <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
+              <h2 className="text-xl font-semibold mb-4">Сводка заказа</h2>
               <div className="flex justify-between mb-2">
-                <span>Product:</span>
+                <span>Продукт:</span>
                 <span>CropGuard Ultra Protection</span>
               </div>
               <div className="flex justify-between mb-2">
-                <span>Quantity:</span>
-                <span>{quantity} x 5L container{quantity > 1 ? 's' : ''}</span>
+                <span>Количество:</span>
+                <span>{quantity} x 5Л контейнер{quantity > 1 ? 'ов' : ''}</span>
               </div>
               <div className="flex justify-between font-semibold">
-                <span>Total:</span>
+                <span>Итого:</span>
                 <span>₽{(4500 * quantity).toLocaleString()}*</span>
               </div>
-              <p className="text-sm text-gray-500 mt-1">*Plus shipping costs</p>
+              <p className="text-sm text-gray-500 mt-1">*Плюс стоимость доставки</p>
             </div>
             
             <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-4">What's Next?</h2>
+              <h2 className="text-xl font-semibold mb-4">Что дальше?</h2>
               <ol className="space-y-3 text-gray-700">
                 <li className="flex">
                   <span className="bg-agriLight rounded-full h-6 w-6 flex items-center justify-center text-agriPrimary font-semibold mr-3">1</span>
-                  <span>Our team will contact you within 24 hours to confirm your order details.</span>
+                  <span>Наша команда свяжется с вами в течение 24 часов для подтверждения деталей заказа.</span>
                 </li>
                 <li className="flex">
                   <span className="bg-agriLight rounded-full h-6 w-6 flex items-center justify-center text-agriPrimary font-semibold mr-3">2</span>
-                  <span>We'll provide payment instructions and finalize shipping costs based on your location.</span>
+                  <span>Мы предоставим инструкции по оплате и рассчитаем стоимость доставки в зависимости от вашего местоположения.</span>
                 </li>
                 <li className="flex">
                   <span className="bg-agriLight rounded-full h-6 w-6 flex items-center justify-center text-agriPrimary font-semibold mr-3">3</span>
-                  <span>After payment confirmation, your order will be shipped within 2-3 business days.</span>
+                  <span>После подтверждения оплаты ваш заказ будет отправлен в течение 2-3 рабочих дней.</span>
                 </li>
               </ol>
             </div>
             
             <div className="text-center">
               <Button asChild className="bg-agriPrimary hover:bg-agriDark text-white">
-                <Link to="/">Return to Homepage</Link>
+                <Link to="/">Вернуться на главную</Link>
               </Button>
             </div>
           </div>

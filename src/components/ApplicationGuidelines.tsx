@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
@@ -6,23 +5,23 @@ import { Download } from 'lucide-react';
 const ApplicationGuidelines = () => {
   const steps = [
     {
-      title: "Preparation",
-      description: "Dilute 10ml of CropGuard Ultra in 5 liters of water. Mix thoroughly until fully dissolved.",
+      title: "Подготовка",
+      description: "Разведите 10 мл CropGuard Ultra в 5 литрах воды. Тщательно перемешайте до полного растворения.",
       image: "https://images.unsplash.com/photo-1576252254925-dcef82db726a?q=80&w=1974&auto=format&fit=crop"
     },
     {
-      title: "Application",
-      description: "Apply using a standard sprayer, ensuring even coverage of leaves and stems. Best applied in early morning or late evening.",
+      title: "Применение",
+      description: "Наносите с помощью стандартного опрыскивателя, обеспечивая равномерное покрытие листьев и стеблей. Лучше всего применять рано утром или поздно вечером.",
       image: "https://images.unsplash.com/photo-1590682300935-2d7997239c03?q=80&w=1974&auto=format&fit=crop"
     },
     {
-      title: "Frequency",
-      description: "Apply once every 2-3 weeks during growing season, or immediately after heavy rainfall.",
+      title: "Частота",
+      description: "Применяйте один раз в 2-3 недели в течение вегетационного периода или сразу после сильного дождя.",
       image: "https://images.unsplash.com/photo-1585144291664-fa5712f990e9?q=80&w=1974&auto=format&fit=crop"
     },
     {
-      title: "Storage",
-      description: "Store in original container, tightly closed, in a cool, dry place away from direct sunlight and children's reach.",
+      title: "Хранение",
+      description: "Храните в оригинальной упаковке, плотно закрытой, в прохладном, сухом месте, вдали от прямых солнечных лучей и в недоступном для детей месте.",
       image: "https://images.unsplash.com/photo-1598843531029-2d95b52301c7?q=80&w=1974&auto=format&fit=crop"
     }
   ];
@@ -31,12 +30,12 @@ const ApplicationGuidelines = () => {
     <section className="section-padding bg-white" id="guidelines">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-agriDark mb-4">Application Guidelines</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-agriDark mb-4">Инструкция по применению</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            For optimal results, follow these recommended application procedures for CropGuard Ultra Protection.
+            Для достижения оптимальных результатов следуйте этим рекомендованным процедурам применения CropGuard Ultra Protection.
           </p>
           <Button className="mt-6 bg-agriPrimary hover:bg-agriDark text-white flex items-center gap-2 mx-auto">
-            <Download size={18} /> Download Complete Guide (PDF)
+            <Download size={18} /> Скачать полную инструкцию (PDF)
           </Button>
         </div>
         
@@ -64,20 +63,20 @@ const ApplicationGuidelines = () => {
         </div>
         
         <div className="mt-12 bg-agriLight p-6 rounded-lg">
-          <h3 className="text-xl font-semibold text-agriDark mb-4">Safety Precautions</h3>
+          <h3 className="text-xl font-semibold text-agriDark mb-4">Меры предосторожности</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <ul className="space-y-2">
-                <li>• Wear protective gloves and eyewear during application</li>
-                <li>• Avoid contact with skin, eyes, and clothing</li>
-                <li>• Keep away from water sources and beehives</li>
+                <li>• Используйте защитные перчатки и очки при нанесении</li>
+                <li>• Избегайте контакта с кожей, глазами и одеждой</li>
+                <li>• Держите вдали от источников воды и ульев</li>
               </ul>
             </div>
             <div>
               <ul className="space-y-2">
-                <li>• Do not apply during windy conditions</li>
-                <li>• Wash hands thoroughly after handling</li>
-                <li>• Do not mix with other chemical products</li>
+                <li>• Не наносите при сильном ветре</li>
+                <li>• Тщательно мойте руки после использования</li>
+                <li>• Не смешивайте с другими химическими продуктами</li>
               </ul>
             </div>
           </div>

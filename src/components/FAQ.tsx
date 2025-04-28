@@ -9,28 +9,28 @@ import {
 
 const faqItems = [
   {
-    question: "How does CropGuard Ultra work?",
-    answer: "CropGuard Ultra works through a multi-layered approach. Its active ingredients create a protective barrier on plants while being absorbed systemically to fight existing infestations. The bio-stimulants simultaneously strengthen the plant's natural defense mechanisms, creating comprehensive protection against pests and diseases."
+    question: "Как работает CropGuard Ultra?",
+    answer: "CropGuard Ultra работает по многоуровневому принципу. Его активные ингредиенты создают защитный барьер на растениях, одновременно системно борясь с существующими заражениями. Биостимуляторы одновременно укрепляют естественные защитные механизмы растения, создавая комплексную защиту от вредителей и болезней."
   },
   {
-    question: "Is CropGuard safe for organic farming?",
-    answer: "While CropGuard Ultra contains some synthetic components that may not qualify for certified organic farming, we offer CropGuard Organic, specifically formulated to comply with organic certification requirements. Please contact us for more information about our organic-certified options."
+    question: "Безопасен ли CropGuard для органического земледелия?",
+    answer: "Хотя CropGuard Ultra содержит некоторые синтетические компоненты, которые могут не подходить для сертифицированного органического земледелия, мы предлагаем CropGuard Organic, специально разработанный в соответствии с требованиями органической сертификации. Пожалуйста, свяжитесь с нами для получения дополнительной информации о наших органических сертифицированных продуктах."
   },
   {
-    question: "What are the recommended application rates?",
-    answer: "For most crops, we recommend 10ml of CropGuard Ultra per 5 liters of water, covering approximately 100 square meters. However, application rates may vary depending on crop type, growth stage, and infestation level. Please consult the detailed application guide or contact our technical support team for crop-specific recommendations."
+    question: "Каковы рекомендуемые нормы применения?",
+    answer: "Для большинства культур мы рекомендуем 10 мл CropGuard Ultra на 5 литров воды, покрывая примерно 100 квадратных метров. Однако нормы применения могут варьироваться в зависимости от типа культуры, стадии роста и уровня заражения. Пожалуйста, обратитесь к подробному руководству по применению или свяжитесь с нашей службой технической поддержки для получения рекомендаций по конкретным культурам."
   },
   {
-    question: "How long does it take to see results?",
-    answer: "Most farmers report visible results within 7-14 days of application. For preventative use, protection begins immediately after application and drying. For treating existing infestations, initial improvements can be seen within a week, with maximum effectiveness reached after two weeks."
+    question: "Как быстро можно увидеть результаты?",
+    answer: "Большинство фермеров отмечают видимые результаты в течение 7-14 дней после применения. При профилактическом использовании защита начинается сразу после нанесения и высыхания. При лечении существующих заражений первые улучшения можно увидеть в течение недели, максимальная эффективность достигается через две недели."
   },
   {
-    question: "Can CropGuard be mixed with other agricultural products?",
-    answer: "CropGuard Ultra is compatible with most fertilizers and agricultural products. However, we recommend testing compatibility on a small scale before large-scale mixing. Do not mix with highly alkaline products or calcium-based fertilizers. Our technical team can provide specific compatibility information for your existing products."
+    question: "Можно ли смешивать CropGuard с другими сельскохозяйственными продуктами?",
+    answer: "CropGuard Ultra совместим с большинством удобрений и сельскохозяйственных продуктов. Однако мы рекомендуем проверять совместимость в малом масштабе перед крупномасштабным смешиванием. Не смешивайте с сильнощелочными продуктами или удобрениями на основе кальция. Наша техническая команда может предоставить конкретную информацию о совместимости с вашими существующими продуктами."
   },
   {
-    question: "What crops can benefit from CropGuard?",
-    answer: "CropGuard Ultra is effective for a wide range of crops including cereals (wheat, barley, corn), vegetables (tomatoes, peppers, cucumbers), fruit trees, berries, and ornamentals. Our specialized formulations are available for specific crop families with unique protection needs."
+    question: "Для каких культур подходит CropGuard?",
+    answer: "CropGuard Ultra эффективен для широкого спектра культур, включая зерновые (пшеница, ячмень, кукуруза), овощи (томаты, перец, огурцы), фруктовые деревья, ягоды и декоративные растения. Доступны специализированные формуляции для конкретных семейств культур с уникальными потребностями в защите."
   }
 ];
 
