@@ -2,9 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +21,16 @@ const FloatingCTA = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToOrder = () => {
-    const orderSection = document.getElementById('order');
-    if (orderSection) {
-      orderSection.scrollIntoView({ behavior: 'smooth' });
+  const handleClick = () => {
+    // Если мы на главной странице, просто скроллим к секции заказа
+    if (window.location.pathname === '/') {
+      const orderSection = document.getElementById('order');
+      if (orderSection) {
+        orderSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Иначе переходим на главную и направляем к секции заказа
+      navigate('/#order');
     }
   };
 
@@ -33,7 +41,7 @@ const FloatingCTA = () => {
       }`}
     >
       <Button 
-        onClick={scrollToOrder}
+        onClick={handleClick}
         className="bg-agriPrimary hover:bg-agriDark text-white shadow-lg flex items-center gap-2 px-6 py-6 rounded-full animate-float"
       >
         Заказать сейчас <ArrowRight size={18} />
