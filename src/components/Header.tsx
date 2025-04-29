@@ -62,22 +62,22 @@ const Header = () => {
             </NavigationMenuList>
           </NavigationMenu>
           
-          <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
-            <div className="flex items-center text-sm">
-              <Phone size={18} className="text-agriPrimary mr-2" />
+          <div className="flex items-center gap-4 md:gap-6 flex-wrap justify-end">
+            <div className="flex items-center text-sm whitespace-nowrap">
+              <Phone size={18} className="text-agriPrimary mr-2 flex-shrink-0" />
               <span>+7 (800) 123-4567</span>
             </div>
-            <div className="flex items-center text-sm">
-              <Mail size={18} className="text-agriPrimary mr-2" />
+            <div className="flex items-center text-sm whitespace-nowrap">
+              <Mail size={18} className="text-agriPrimary mr-2 flex-shrink-0" />
               <a href="mailto:info@cropguard.com" className="hover:text-agriPrimary transition-colors">
                 info@cropguard.com
               </a>
             </div>
-            <div className="flex items-center text-sm">
-              <MapPin size={18} className="text-agriPrimary mr-2" />
+            <div className="flex items-center text-sm whitespace-nowrap">
+              <MapPin size={18} className="text-agriPrimary mr-2 flex-shrink-0" />
               <span>Москва, Россия</span>
             </div>
-            <Button onClick={scrollToOrder} className="bg-agriPrimary hover:bg-agriDark text-white">
+            <Button onClick={scrollToOrder} className="bg-agriPrimary hover:bg-agriDark text-white whitespace-nowrap">
               Заказать сейчас
             </Button>
           </div>
@@ -136,17 +136,17 @@ const Header = () => {
             
             <div className="space-y-2 px-4">
               <div className="flex items-center text-sm">
-                <Phone size={18} className="text-agriPrimary mr-2" />
-                <span>+7 (800) 123-4567</span>
+                <Phone size={18} className="text-agriPrimary mr-2 flex-shrink-0" />
+                <span className="whitespace-nowrap">+7 (800) 123-4567</span>
               </div>
               <div className="flex items-center text-sm">
-                <Mail size={18} className="text-agriPrimary mr-2" />
+                <Mail size={18} className="text-agriPrimary mr-2 flex-shrink-0" />
                 <a href="mailto:info@cropguard.com" className="hover:text-agriPrimary transition-colors">
                   info@cropguard.com
                 </a>
               </div>
               <div className="flex items-center text-sm mb-3">
-                <MapPin size={18} className="text-agriPrimary mr-2" />
+                <MapPin size={18} className="text-agriPrimary mr-2 flex-shrink-0" />
                 <span>Москва, Россия</span>
               </div>
               <Button 
